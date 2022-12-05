@@ -1,7 +1,10 @@
 import sys
+import base64
 
 def replace_base64_url(url):
-  return """ + url + """
+  #base64 encode the url
+  base64_url = base64.b64encode(url.encode('utf-8')).decode('utf-8')
+  return base64_url
 
 def main(argv):
   if len(argv) != 2:
