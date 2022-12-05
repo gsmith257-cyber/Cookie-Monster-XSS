@@ -16,5 +16,5 @@ def main(argv):
 
   print(js)
 
-if name == "main":
+if __name__ == "__main__":
   main(sys.argv)
